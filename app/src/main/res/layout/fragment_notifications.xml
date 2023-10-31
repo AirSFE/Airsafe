@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:theme="@style/Theme.Airsafe10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:context=".ui.notifications.NotificationsFragment">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:inputType="textMultiLine"
+                    android:text="Este es un indicador de calidad del aire, el color e icono cambian dependiendo la calidad del aire(la cual se mide en puntos imeca):"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imagen1"
+                    android:layout_width="302dp"
+                    android:layout_height="126dp"
+                    android:src="@drawable/indicador_de_ica"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/texto1" />
+
+                <TextView
+                    android:id="@+id/texto2"
+                    android:layout_width="377dp"
+                    android:layout_height="63dp"
+                    android:text="El color de el indicador se define por los siguientes parametros:"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.476"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagen1"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imagen2"
+                    android:layout_width="373dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/texto2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texto3"
+                    android:layout_width="379dp"
+                    android:layout_height="109dp"
+                    android:text="La información de la app se actualiza cada 30 segundos, pero si lo necesitas presiona el boton actualizar para obtener la información en ese mismo instante."
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagen2"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imagen3"
+                    android:layout_width="378dp"
+                    android:layout_height="173dp"
+                    android:src="@drawable/botonactualizar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/texto3" />
+
+                <TextView
+                    android:id="@+id/texto4"
+                    android:layout_width="377dp"
+                    android:layout_height="63dp"
+                    android:text="Las recomendaciones que te proporciona la app dependen de si te encuentras en interiores o en exteriores, cambia el switch según sea el caso:"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagen3"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imagen4"
+                    android:layout_width="318dp"
+                    android:layout_height="163dp"
+                    android:src="@drawable/recomendaciones"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/texto4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

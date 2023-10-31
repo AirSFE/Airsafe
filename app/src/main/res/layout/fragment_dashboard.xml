@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="354dp"
+        android:layout_height="611dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291"
+        tools:context=".MainActivity">
+
+        <!-- text view for displaying heading -->
+
+        <!-- Add a container to hold the graph and label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="547dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <!-- Line graph view where you will be displaying your data -->
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:rotation="-90"
+                android:text="Puntos IMECA"
+                android:textColor="@color/purple_200"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/idGraphView"
+                android:layout_width="281dp"
+                android:layout_height="511dp"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <!-- TextView to display the label "IMECA" -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Actualizars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

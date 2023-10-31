@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "830439677399",
+    "firebase_url": "https://airsafe-proyecto-default-rtdb.firebaseio.com",
+    "project_id": "airsafe-proyecto",
+    "storage_bucket": "airsafe-proyecto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830439677399:android:fcb6273f137408de4aff92",
+        "android_client_info": {
+          "package_name": "com.example.airsafe10"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaeDHK6zxziE7ZfPF1V6-fM5epWQTcwxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
